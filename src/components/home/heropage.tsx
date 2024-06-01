@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroPage(){
     return(
-        <div className="flex items-center justify-around ">
+        <div className="flex items-center justify-around h-screen">
             <div className="flex flex-col-reverse lg:flex-row justify-center gap-32 items-center">
                 <div className="flex flex-col gap-5">
                     <Heading as='h2' size='xl' className="text-pink-400">A Global Chat bot for Discord</Heading>

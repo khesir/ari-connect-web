@@ -3,7 +3,7 @@ import { Avatar, Heading } from "@chakra-ui/react";
 
 export default function Navbar(){
     return(
-        <div className="w-full flex justify-around text-white bg-slate-800">
+        <div className="w-full flex justify-between px-5 text-white bg-slate-80 fixed ">
             {/* Left nav */}
             <div className="flex items-center gap-5 px-10 ">
                 <Heading as='h4' size='md'>Ari Connect</Heading>
