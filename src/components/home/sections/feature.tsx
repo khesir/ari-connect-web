@@ -1,7 +1,5 @@
-import { Heading, Text} from "@chakra-ui/react";
-import image2 from "@/assets/image-2.jpg"
+import { Heading} from "@chakra-ui/react";
 import { BsClockHistory } from "react-icons/bs";
-import  styles from '@/styles/index'
 import { FeatureCard } from "../component/featureCard";
 
 
