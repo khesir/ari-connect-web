@@ -1,31 +1,27 @@
-import { Heading, Text } from "@chakra-ui/react";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
+import { Heading,Text } from "@chakra-ui/react";
+import { IconType } from "react-icons"
 
 
-type Content = {
-    img: StaticImport,
-    title: String,
-    content : String
+type FeatureProps = {
+    icon: IconType;
+    title: string;
+    content: string;
 }
 
-export function FeatureCard({img, title,content}: Content){
+export function FeatureCard ({icon: Icon, title , content}: FeatureProps){
     return(
-        <div className="flex flex-col-reverse items-center gap-10 lg:flex-row lg:justify-around">
-            <div className="flex flex-col gap-3 lg:w-2/6 text-black">
-                <Heading as='h2' size='xl' >
+        <div className="flex flex-col gap-4 max-w-[300px]">
+            <div className="flex items-center gap-5">
+                    
+                <Icon size={25}/>
+                <Heading as='h5' size='sm' >
                     {title}
                 </Heading>
-                <Text fontSize='xl'>
-                    {content}
-                </Text>
             </div>
-            <Image
-                src={img}
-                width={300}
-                height={300}
-                alt = "Feature"
-            /> 
+
+            <Text fontSize='xs'>
+                {content}
+            </Text>
         </div>
     )
 }

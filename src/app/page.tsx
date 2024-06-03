@@ -1,21 +1,37 @@
-import FeaturePage from "@/components/home/feature";
-import Footer from "@/components/home/footer";
-import HeroPage from "@/components/home/heropage";
-import Navbar from "@/components/home/navbar";
-import ServerStats from "@/components/home/server-stats";
+import FeaturePage from "@/components/home/sections/feature";
+import Footer from "@/components/home/sections/footer";
+import HeroPage from "@/components/home/sections/heropage";
+import Navbar from "@/components/home/sections/navbar";
+import OfferPage from "@/components/home/sections/offer";
+import SetupPage from "@/components/home/sections/setup";
 
+import Image from "next/image";
+import wave from "../../public/wave.svg"
+import AboutPage from "@/components/home/sections/about";
+import ContactPage from "@/components/home/sections/contact";
 
 export default function Home() {
 
   return (
-      <main className="flex flex-col  bg-slate-800">
+      <div className="bg-white overflow-hidden">
         <Navbar/>
         <HeroPage/>
-        <div className="relative bg-white rounded-t-3xl mt-10 border-t-4 border-solid border-pink-300">
-          <ServerStats className="relative -top-12" />
+
+        <Image
+            priority
+            src={wave}
+            alt="Wave"
+            className="pt-10 w-full"
+          />
+          
+        <div className=" bg-[#1A202C]">
+          <AboutPage/>
           <FeaturePage/>
+          <OfferPage/>
+          <SetupPage/>
+          <ContactPage/>
           <Footer/>
         </div>
-      </main>
+      </div>
   );
 }
