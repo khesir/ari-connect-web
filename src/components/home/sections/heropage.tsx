@@ -11,9 +11,9 @@ import ServerStats from '../component/server-stats';
 
 export default function HeroPage(){
     return(
-        <section className={` py-6 px-6 py-12relative z-0 `}>
+        <section className={` max-w-[1920px] mx-auto py-6 px-6 pt-40 relative z-0 `}>
             {/* Text animation */}
-            <div className={` max-w-[1920px] mx-auto flex justify-around lg:flex-row items-center flex-col-reverse gap-16 lg:gap-10 relative`}>
+            <div className={` flex justify-around lg:flex-row items-center flex-col-reverse gap-16 lg:gap-10 relative`}>
                 <div className="flex flex-col gap-4 max-w-lg">
                     <Heading as='h2' size='xl' className="text-pink-400">A Global Chat bot for Discord</Heading>
                     <Text fontSize='lg' className=" text-black">Ari Connect - Connects Your Favorite Servers to a Single Channel</Text>

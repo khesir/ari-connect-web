@@ -38,8 +38,8 @@ const features = [
 
 export default function FeaturePage(){
     return(
-        <section className="w-full flex flex-col items-center justify-center gap-10 p-20">
-            <div className={` max-w-[920px] flex flex-col items-center justify-center gap-10 text-white`}>
+        <section className="max-w-[920px] mx-auto p-20">
+            <div className={` flex flex-col items-center justify-center gap-10 text-white`}>
                 <div className=" flex justify-center items-center gap-5">
                     <div className=" w-32 sm:w-52 h-1 bg-pink-300"/>
                     <Heading as='h2' size='xl' >Features</Heading>

@@ -7,8 +7,8 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 export default function ContactPage(){
     return(
-        <section className="w-full p-20 flex justify-center items-center text-white">
-            <div className=" min-w-[2000px] flex flex-col justify-center items-center gap-20">
+        <section className="max-w-[1280px] p-20 mx-auto text-white">
+            <div className="  flex flex-col justify-center items-center gap-20">
                 <Heading as='h2' size='xl'>Contact</Heading>
                 <div className="flex flex-col lg:flex-row justify-around gap-10">
                     <div className=" flex flex-col items-center gap-10 lg:px-20">

@@ -1,7 +1,6 @@
 import FeaturePage from "@/components/home/sections/feature";
 import Footer from "@/components/home/sections/footer";
 import HeroPage from "@/components/home/sections/heropage";
-import Navbar from "@/components/home/sections/navbar";
 import OfferPage from "@/components/home/sections/offer";
 import SetupPage from "@/components/home/sections/setup";
 
@@ -13,12 +12,11 @@ import ContactPage from "@/components/home/sections/contact";
 export default function Home() {
 
   return (
-      <div className="bg-white overflow-hidden">
-        <Navbar/>
+      <main className="bg-white overflow-hidden">
         <HeroPage/>
-
         <Image
             priority
+            height={50}
             src={wave}
             alt="Wave"
             className="pt-10 w-full"
@@ -32,6 +30,6 @@ export default function Home() {
           <ContactPage/>
           <Footer/>
         </div>
-      </div>
+      </main>
   );
 }
